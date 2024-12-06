@@ -1,0 +1,42 @@
+
+.footer {
+  padding:$padding2;
+  background-color: $background-color2;
+  .container{
+    $max-width: 800;
+    $margin: 100 auto;
+    .footer-icon {
+      display:$display2;
+      .icon{
+        width: 400px; 
+      }
+      .icon h6{
+        font-size: $font-size2;
+        color: $color;
+        text-transform: $text-transform;
+        margin-bottom:$margin-bottom;
+       
+              }
+      .icon a{
+        font-size: 10px;
+        color: $color;
+        margin-bottom:$margin-bottom;
+        display:$display;
+        padding-right: 10px;
+            }
+      .icon-whatsapp{
+        font-size: 35px;
+        color: $color;
+        margin-bottom:$margin-bottom;
+        display:$display;
+          }
+            }
+      }
+    }
+
+
+
+
+
+
+

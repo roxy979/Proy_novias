@@ -1,0 +1,111 @@
+.card-group{
+  width:90% ;  
+  max-width: 1000px;
+  margin: 10px auto;
+  .card{
+    padding: $padding;
+    background-color: $background-color3;
+    margin-bottom: $margin-bottom2;
+    margin-top: $margin-top;
+    .card-body{
+      @include cardsbody($paddingcard, $text-aligncard);
+      .btn{
+        @extend .botoncard;
+      }
+    }
+  }
+}
+
+.card1{
+  @include cards1();
+  .card-body1{
+    @include cardsbody($paddingcard,left);
+    display: block;
+    .btn{
+      @extend .botoncard;
+    }
+  }
+}
+
+.card2{
+  @extend .card1;
+  padding-left: 10px;
+  align-items: $text-aligncard;
+  .iconos{
+    display: flex;
+    padding-left: 30px;
+    .i{
+      margin-left: 20px;
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+      margin-right: 5px;
+      font-size: 20px;
+      padding-top: 200;
+      padding-left: 5px;
+    }
+  }
+  .card-body2{
+    @include cardsbody($paddingcard, $text-aligncard);
+    .btn1{
+      margin-left: 50px; 
+      margin-right: 50px; 
+      margin-top: 20px;
+      margin-bottom: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: aqua;   
+  }
+  .btn2{
+    @extend .btn1;
+    background-color:honeydew ;
+  }
+  }
+  .card-body3{
+    @include cardsbody($paddingcard, $text-aligncard);
+    }
+}
+
+@media screen and (min-width:480px){
+  .card-group
+          {
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+            height: 50%;
+            .card,.card1,.card2{
+              margin:0;
+              display: flex;
+              flex-direction: column;
+              .card-body,.card-body1,.card-body2,.card-body3{
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+  .card-group1
+    {
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      gap:20px;
+      height: 50%;
+      .card,.card1,.card2{
+        margin:0;
+        display: flex;
+        flex-direction: column;
+       
+        .card-body,.card-body1,.card-body2,.card-body3{
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+}
+input, textarea{
+  margin-bottom: 9px;
+  font-size: 17px;
+  }
+
+
+
